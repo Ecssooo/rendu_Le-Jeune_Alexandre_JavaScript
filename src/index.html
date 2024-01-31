@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title></title>
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Darkmode -->
+    <button id="theme">Dark mode</button>
+
+    <!-- Formulaire -->
+    <div class="message-error">
+      <h1>Une erreur est survenue lors de l'envoi du formulaire</h1>
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <h1>Votre formulaire a bien été envoyé</h1>
+    </div>
+    <form id="formulaire">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" class="entrer" />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" class="entrer" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="entrer" />
+      </div>
+      <div>
+        <label for="radios">Radio 1 :</label>
+        <input type="radio" name="radios" id="radio1" value="radio1" />
+        <label for="radio1">Radio 2</label>
+        <input type="radio" name="radios" id="radio2" value="radio2" />
+        <label for="radio2">Radio 3</label>
+        <input type="radio" name="radios" id="radio3" value="radio3" />
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">Axe 1</option>
+          <option value="axe2">Axe 2</option>
+          <option value="axe3">Axe 3</option>
+        </select>
+      </div>
+      <button type="submit">S'inscrire</button>
+    </form>
+
+    <!-- Swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../assets/image1.jpg" alt="image1" class="image polo" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/image2.jpg" alt="image2" class="image mustang" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/image3.jpg" alt="image3" class="image cadillac" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <ul id="tabs_ul">
+        <li id="1" class="a-1 tab activebouton">Jeux Vidéo</li>
+        <li id="2" class="a-2 tab">Animation 3d</li>
+        <li id="3" class="a-3 tab">Coding</li>
+        <li id="4" class="a-4 tab">CDEB</li>
+        <li id="5" class="a-5 tab">Creation & Design</li>
+      </ul>
+
+      <div class="a-1 content active">Axe Jeux Video</div>
+      <div class="a-2 content">Axe animation 3d</div>
+      <div class="a-3 content">Axe Coding</div>
+      <div class="a-4 content">Axe CDEB</div>
+      <div class="a-5 content">Axe Creation & Design</div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
